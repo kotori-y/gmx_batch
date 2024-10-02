@@ -153,7 +153,7 @@ printf "1\n13\n" | gmx rms -f $md_xtc -s $md_tpr -o "$mol_root/${mol_name}_rmsd_
 # 计算Mol rmsd，第一次mol，第二次mol
 printf "13\n13\n" | gmx rms -f $md_xtc -s $md_tpr -o "$mol_root/${mol_name}_rmsd_lig_lig.xvg" && \
 # 氢键数目，第一次pro，第二次mol
-printf "1\n13\n" | gmx hbond -f $md_xtc -s $md_tpr -num "$mol_root/${mol_name}_hbnum.xvg" && \
+printf "1\n13\n" | gmx hbond -f $md_xtc -s $md_tpr -num "$mol_root/${mol_name}_hbnum.xvg"
 }
 
 # 主函数
