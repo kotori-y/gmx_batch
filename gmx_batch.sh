@@ -1,8 +1,6 @@
 #!/bin/bash
-
 # 使用set -e确保脚本遇到错误时退出
 set -e
-
 # 设置错误捕捉，发生错误时打印错误信息并继续执行
 trap 'echo "Error occurred at line $LINENO"' ERR
 
@@ -128,7 +126,7 @@ run() {
 }
 
 # 获得分析结果
-analyse{
+analyse() {
   work_path=$1
   mol_name=$2
 
